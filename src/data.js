@@ -58,7 +58,7 @@ export const headerData = {
     },
   ],
   actions: [
-    { type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }
+    { type: 'button', text: 'Facebook', href: 'https://www.facebook.com/astrabadminton/?locale=cs_CZ' }
   ],
 };
   

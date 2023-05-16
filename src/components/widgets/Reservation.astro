@@ -1,0 +1,31 @@
+---
+import { Icon } from 'astro-icon';
+
+interface Item {
+  title: string;
+  description: string;
+  icon?: string;
+}
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  highlight?: string;
+  items: Array<Array<Item>>;
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  highlight,
+  items = [],
+} = Astro.props;
+
+  // <iframe src="https://www.qick.cz/sportoviste/366/rezervace" width="100%" height="1000" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+---
+
+<section class="scroll-mt-16" id="rezervace">
+ 
+  <iframe src="http://localhost:4000/sportoviste/374/rezervace" width="100%" height="1000" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</section>
